@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        img {
+            width: 100%;
+
+        }
+
+        h1,
+        footer {
+            text-align: center;
+        }
+
+        header,
+        footer {
+            padding: 10px 0;
+            border: 1px solid #888;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+    <main>
+        <h2>undertitel</h2>
+        <section>
+
+            <article>
+                <img src="https://placeimg.com/400/300/animals" alt="dyr" class="first">
+                <h3>article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus optio atque voluptatum, beatae accusamus laudantium sapiente odit aliquid tempora voluptatem, cum consectetur blanditiis necessitatibus minus voluptatibus adipisci eligendi illo! Iste.</p>
+            </article>
+
+
+            <article>
+                <img src="https://placeimg.com/400/300/animals" alt="dyr">
+
+                <h3>article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus optio atque voluptatum, beatae accusamus laudantium sapiente odit aliquid tempora voluptatem, cum consectetur blanditiis necessitatibus minus voluptatibus adipisci eligendi illo! Iste.</p>
+            </article>
+
+
+        </section>
+    </main>
+    <footer>this is the footer</footer>
+
+
+    <script>
+        const pic1 = document.querySelector("article:nth-child(1) img");
+        console.log(pic1);
+        pic1.src = "strand.jpg";
+        pic1.alt = "et billede af en strand";
+
+    </script>
+</body>
+
+</html>
