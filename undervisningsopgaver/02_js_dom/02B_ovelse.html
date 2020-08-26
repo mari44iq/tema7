@@ -58,8 +58,13 @@
 
     <script>
         const overskrift = document.querySelector("h1");
+        const artikel1 = document.querySelector("article:nth-child(1) p");
         overskrift.textContent;
         console.log(overskrift.textContent);
+        overskrift.textContent = "Billeder";
+        console.log(overskrift.textContent);
+        artikel1.textContent = "Her er et billede af nogle dyr";
+        /*kan også bruge innerhtml istedet for textcontent, hvis man vil redigere i teksten (lave fed tekst osv)*/
 
     </script>
 </body>
