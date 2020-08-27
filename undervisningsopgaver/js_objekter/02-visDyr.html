@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objekter</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<article>
+
+</article>
+
+<body>
+    <script>
+        let dyr = {
+            "navn": "Gris",
+            "type": "Pattedyr",
+            "levested": "svinesti",
+            "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+        }
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let articleSection = document.querySelector("article");
+            let newParagraph = document.createElement("p");
+            let newParagraphText = document.createTextNode(`Dyr: ${dyr.navn} type: ${dyr.type} levested: ${dyr.levested}`);
+            let newImage = document.createElement("img");
+            newImage.src = dyr.billede;
+
+            articleSection.appendChild(newParagraph);
+            newParagraph.appendChild(newParagraphText);
+            articleSection.appendChild(newImage);
+
+        }
+
+    </script>
+</body>
+
+</html>
