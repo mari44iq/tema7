@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="">
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 20px;
+        /*
+            display: flex;
+            flex-wrap: wrap;
+*/
+
+    }
+
+    article {
+        /*           flex-basis: 50%;*/
+        border: 1px solid #333;
+    }
+
     img {
         width: 100%;
     }
