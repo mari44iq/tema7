@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <section id="list"></section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        // Lav object og udfyld properties for fem dyr
+        let dyr = [{
+            "navn": "Gris",
+            "type": "Pattedyr",
+            "billede": "http://mabe-kea.dk/E19/pics/pig.png",
+            "levested": "Svinefarme"
+        }, {
+            "navn": "Frø",
+            "type": "Amfibie",
+            "billede": "http://mabe-kea.dk/E19/pics/frog.png",
+            "levested": "Vandhuller"
+        }, {
+            "navn": "Ræv",
+            "type": "Pattedyr",
+            "billede": "http://mabe-kea.dk/E19/pics/fox.png",
+            "levested": "Skove"
+        }, {
+            "navn": "Sild",
+            "type": "Fisk",
+            "billede": "http://mabe-kea.dk/E19/pics/sild.png",
+            "levested": "Havet"
+        }, {
+            "navn": "Krokodille",
+            "type": "Krybdyr",
+            "billede": "http://mabe-kea.dk/E19/pics/kroko.png",
+            "levested": "Floder"
+        }];
+
+        function start() {
+            const list = document.querySelector("#list");
+
+            // Løb array liste igennem og skriv ud i section
+            dyr.forEach(dyr => {
+                list.innerHTML += `<p>${dyr.navn}, ${dyr.type}, fra ${dyr.levested}<p>`;
+            })
+
+        }
+
+    </script>
+
+</body>
+
+</html>
