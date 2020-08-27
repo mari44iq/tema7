@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 20px;
+            /*
+            display: flex;
+            flex-wrap: wrap;
+*/
+
+        }
+
+        article {
+            /*           flex-basis: 50%;*/
+            border: 1px solid #333;
+        }
+
         img {
             width: 100%;
 
@@ -57,10 +83,22 @@
 
 
     <script>
-        const pic1 = document.querySelector("article:nth-child(1) img");
+        /*const pic1 = document.querySelector("article:nth-child(1) img");
         console.log(pic1);
         pic1.src = "strand.jpg";
-        pic1.alt = "et billede af en strand";
+        pic1.alt = "et billede af en strand";*/
+
+        const title = document.querySelector("header h1");
+        const article1 = document.querySelector("article:nth-child(1)");
+        const img1 = document.querySelector("article:nth-child(1) img");
+        const article1Heading = document.querySelector("article:nth-child(1) h3");
+        const article1Content = document.querySelector("article:nth-child(1) p");
+
+        title.textContent = "Billeder";
+        article1Heading.textContent = "Dyr";
+        article1Content.textContent = "Billeder af dyr";
+        img1.src = "strand.jpg";
+        img1.alt = "En strand";
 
     </script>
 </body>
